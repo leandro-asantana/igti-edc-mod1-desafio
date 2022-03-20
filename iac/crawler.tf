@@ -1,6 +1,6 @@
 resource "aws_glue_crawler" "glue_crawler" {
-  database_name = "igti_du"
-  name          = "igti_edc_mod1_desafio_processing_crawler"
+  database_name = "db-leandrosantana-igti-edc-mod1-desafio"
+  name          = "crawler-leandrosantana-igti-edc-mod1-desafio"
   role          = aws_iam_role.glue_role.arn
 
   s3_target {
